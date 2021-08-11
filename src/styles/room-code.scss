@@ -17,13 +17,13 @@
         align-items: center;
     }
 
-    span {
+    > span {
         display: block;
         align-self: center;
         flex: 1;
         padding: 0 16px 0 12px;
 
-        width: 240px;
+        width: 235px;
         font-size: 14px;
         font-weight: 500;
     }
