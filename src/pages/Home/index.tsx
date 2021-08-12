@@ -37,6 +37,9 @@ const Home: React.FC = () => {
             return
         }
 
+        if (roomRef.val().finishedAt)
+            return alert("Room already closed")
+
         push(`/rooms/${roomCode}`)
     }
 
