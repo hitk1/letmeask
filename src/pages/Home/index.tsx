@@ -32,10 +32,8 @@ const Home: React.FC = () => {
 
         const roomRef = await firebaseDatabase.ref(`rooms/${roomCode}`).get()
 
-        if (!roomRef.exists()) {
-            alert('Room does not exists')
-            return
-        }
+        if (!roomRef.exists())
+            return alert('Room does not exists')
 
         if (roomRef.val().finishedAt)
             return alert("Room already closed")
